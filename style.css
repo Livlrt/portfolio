@@ -1,17 +1,88 @@
 body {
-  font-family: 'Miontserrat', sans-serif;
-  background-image: url(images/red.jpg);
-  background-size: cover;
+  font-family: 'Lato', sans-serif;
 }
 
-h1 {
-  color: black;
-  font-weight: normal;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9bf;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.11);
+  padding: 0.8rem 1rem;
 }
 
-.avatar {
-  height: 100px;
+.menu ul {
+  display: flex;
+  margin: 0;
+}
+
+.menu li {
+  padding-right: 10px;
+}
+
+.menu a {
+  font-weight: bolder;
+  color: #399fed;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo img {
+  width: 50px;
   border-radius: 50%;
+}
+
+#proj img {
+  width: 750px;
+  margin: 0 auto 30px auto;
+}
+
+.container {
+  margin-top: 100px;
+  max-width: 1152px;
+  width: 1152px;
+  text-align: center;
+}
+
+#presentation {
+  display: block;
+  margin: 180px auto;
+}
+#presentation h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#presentation h3 {
+  font-size: 25px;
+  color: #656464;
+  font-weight: 300;
+  margin: 29px;
+}
+
+.tags {
+  padding: 20px;
+  margin: 20px auto 30px auto;
+  max-width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+span {
+  padding: 7px;
+  border: 1px solid #89D2DC;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+span:hover {
+  border: 1px solid blue;
+}
+
+#presentation a {
+  margin-top: 50px;
 }
 
 p {
@@ -25,18 +96,6 @@ p {
   color: black;
 }
 
-li {
-  display: inline-block;
-  padding: 0px 20px;
-  font-size: 40px;
-}
-
-ul {
-  text-decoration: none;
-  list-style: none;
-  padding-left: 0;
-}
-
 i {
   color: lightgray;
 }
@@ -48,11 +107,11 @@ i:hover {
 .button {
   text-decoration: none;
   color: white;
-  border: 1px solid #89D2DC;
-  padding: 7px;
-  border-radius: 3px;
+  padding: 11px;
+  border-radius: 5px;
   background-color: #89D2DC;
   font-weight: bolder;
+  font-size: 18px;
 }
 
 .button:hover {
@@ -61,22 +120,40 @@ i:hover {
   color: gray;
 }
 
-.container {
-  width: 700px;
-  margin: 40px auto;
+#details {
+  /*background-color: blue;*/
 }
 
-.text-center {
-  text-align: center;
+#details h2 {
+  margin: 30px;
 }
 
-.card {
-  background-color: #f9f9f9bf;
-  border-radius: 4px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.11);
-  padding: 40px;
+#details p, li {
+    font-size: 20px;
+    color: gray;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    font-weight: lighter;
+    /*padding-block-end: 20px;*/
+    max-width: 720px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    margin: auto;
+}
+#proj h2 {
+  margin-bottom: 20px;
+}
+
+#proj p {
+  max-width: 720px;
+  margin: auto;
+
+  text-align: justify;
+}
+
+footer {
+  margin: 50px auto;
   text-align: center;
-  margin: 20px 0px;
 }
 
 #contact {
