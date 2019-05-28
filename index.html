@@ -13,20 +13,20 @@
   <body>
     <div class="navbar">
       <div class="logo">
-        <img src="images/logo.jpg" alt="">
+        <img src="images/logo1.jpg" alt="">
       </div>
       <div class="menu">
         <ul class="navlist">
-          <li><a href="Accueil">Accueil</a></li>
-          <li><a href="Services">Services</a></li>
-          <li><a href="Portfolio">Portfolio</a></li>
-          <li><a href="Contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#myprojects">My Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
 
     <main role="main">
-      <div class="container" id="presentation">
+      <div class="container" id="home">
         <h1>Full Stack Web Developer</h1>
         <h3>Design and create robust and aesthetic Web applications.</h3>
         <div class="tags">
@@ -42,15 +42,18 @@
           <span>GitHub</span>
           <span>Heroku</span>
         </div>
-        <a href="" class="button">See my portfolio</a>
+        <a href="#proj" class="button">See my portfolio</a>
       </div>
 
-      <div class="container" id="details">
+      <div class="container" id="about">
         <h2>Hi, I'm Livia. Nice to meet you!</h2>
         <p>Junior Web Developer able to write well-designed, testable and effective code using current programming best practices.</p>
+      </div>
 
+      <div class="container" id="services">
         <h2>How can I help you?</h2>
         <ul class="serviceslist">
+          <li>Design and development of your front and back end projects</li>
           <li>Website redesign</li>
           <li>Content integration</li>
           <li>Implementation of new features</li>
@@ -61,10 +64,10 @@
         </ul>
       </div>
 
-      <div class="container" id="proj">
+      <div class="container" id="myprojects">
         <h2>My Projects</h2>
         <div id="CG">
-          <p>commongood.live - Offline</p>
+          <p>commongood.live  <span id="off">offline</span></p>
           <p>Common Good is the world's best performing benchmarking platform for international volunteering. With us, it is easier to find the humanitarian missions that best suit you.</p>
           <img src="images/CG1.jpg">
           <img src="images/CG2.jpg">

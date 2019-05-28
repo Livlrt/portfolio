@@ -9,7 +9,10 @@ body {
   justify-content: space-between;
   background-color: white;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.11);
+}
 
+.logo{
+  padding-left: 15px;
 }
 
 .menu ul {
@@ -19,12 +22,18 @@ body {
 
 .menu li {
   font-size: 18px;
-  padding-right: 10px;
+  padding-right: 40px;
 }
 
 .menu a {
-  font-weight: normal;
-  color: #399fed;
+    font-weight: lighter;
+    color: #5a5a5a;
+    font-size: 16px;
+}
+
+.menu a:hover{
+  color: black;
+  font-weight: bolder;
 }
 
 ul {
@@ -32,18 +41,18 @@ ul {
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 70px;
+  /*height: 50px;*/
+  /*border-radius: 50%;*/
 }
 
-#proj img {
+#myprojects img {
   width: 750px;
   margin: 0 auto 30px auto;
   opacity: 0.7;
 }
 
-#proj img:hover {
+#myprojects img:hover {
   opacity: 1;
 }
 
@@ -54,16 +63,16 @@ ul {
   text-align: center;
 }
 
-#presentation {
+#home {
   display: block;
   margin: 180px auto;
 }
-#presentation h1 {
+#home h1 {
   font-size: 50px;
   font-weight: 600;
 }
 
-#presentation h3 {
+#home h3 {
   font-size: 25px;
   color: white;
   font-weight: 300;
@@ -90,7 +99,7 @@ span:hover {
   border: 1px solid blue;
 }
 
-#presentation a {
+#home a {
   margin-top: 50px;
 }
 
@@ -149,15 +158,23 @@ i:hover {
     /* justify-content: center; */
     margin: auto;
 }
-#proj h2 {
+#myprojects h2 {
   margin-bottom: 20px;
 }
 
-#proj p {
+#myprojects p {
   max-width: 720px;
   margin: auto;
 
   text-align: justify;
+}
+
+#off {
+  border: 1px solid #c50d0d;
+  background-color: #c50d0d;
+  font-weight: bolder;
+  padding: 3px;
+  opacity: 0.7;
 }
 
 footer {
@@ -169,6 +186,11 @@ footer {
   color: #39A0ED;
   font-weight: bolder;
 }
+
+.contactlist li {
+  font-size: 20px;
+}
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
