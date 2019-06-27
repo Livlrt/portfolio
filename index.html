@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant|Cormorant+Garamond:300,400|Nanum+Myeongjo|Playfair+Display&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="logo">
-        <img src="images/logo1.jpg" alt="">
-      </div>
+<!--     <div class="navbar">
       <div class="menu">
         <ul class="navlist">
           <li><a href="#about">About</a></li>
@@ -23,49 +21,45 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <main role="main">
-      <div class="container" id="home">
-        <h1>Full Stack Web Developer</h1>
-        <h3>Design and create robust and aesthetic Web applications.</h3>
-        <div class="tags">
-          <span>JavaScript</span>
-          <span>Ruby</span>
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>Bootstrap</span>
-          <span>jQuery</span>
-          <span>SQL</span>
-          <span>Ruby on Rails</span>
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>Heroku</span>
+      <section class="home">
+        <div class="logo">
+          <h1>LL</h1>
         </div>
-        <a href="#proj" class="button">See my portfolio</a>
-      </div>
+        <div class="bref">
+          <h1>Hello, I'm Livia Lörtscher</h1><h1>freelance full stack web developer</h1><h1>based in Paris.</h1>
+          <p>Ruby | Ruby on Rails | JavaScript | jQuery   WordPress | Bootstrap | HTML5 | CSS3 | jQuery | SQL | git | GitHub | Heroku</p>
+        </div>
 
-      <div class="container" id="about">
-        <h2>Hi, I'm Livia. Nice to meet you!</h2>
-        <p>Junior Web Developer able to write well-designed, testable and effective code using current programming best practices.</p>
-      </div>
+        <!-- Scroll Down Button -->
+        <section class="ct-btn-scroll" id="section10">
+          <a href="#section2"><span></span></a>
+        </section>
+        <!-- End Scroll Down Button -->
 
-      <div class="container" id="services">
-        <h2>How can I help you?</h2>
+      </section>
+
+      <section class="about" id="section2">
+        <h1>Nice to meet you</h1>
+        <h3>I design and create robust and aesthetic Web applications based on a real understanding of customer needs. My goal: do websites and web applications that make the users life better or easier in any way. I can help you with:</h3>
         <ul class="serviceslist">
-          <li>Design and development of your front and back end projects</li>
+          <li id="ab">Design and development of your front and back end projects</li>
           <li>Website redesign</li>
-          <li>Content integration</li>
+          <li id="ab">Content integration</li>
           <li>Implementation of new features</li>
-          <li>MVP to prototype a startup idea</li>
+          <li id="ab">MVP to prototype a startup idea</li>
           <li>API integration</li>
-          <li>Creation of a showcase website</li>
-          <li>Construction of web application</li>
+          <li id="ab">Creation of a showcase website</li>
+          <li>Construction of web application from scratch</li>
         </ul>
-      </div>
+        <h3>Let's make something special!</h3>
+      </section>
 
-      <div class="container" id="myprojects">
-        <h2>My Projects</h2>
+      <section class="myprojects">
+        <h1>Portfolio</h1>
+        <h3>Check out my latest projects:</h3>
         <div id="CG">
           <p>commongood.live  <span id="off">offline</span></p>
           <p>Common Good is the world's best performing benchmarking platform for international volunteering. With us, it is easier to find the humanitarian missions that best suit you.</p>
@@ -75,17 +69,33 @@
         </div>
         <div></div>
         <div></div>
-      </div>
+      </section>
 
       <footer>
-        <h3 id="contact">Let's get in touch!</h3>
-        <ul class="contactlist">
-          <li><a href="https://twitter.com/LortscherL" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-          <li><a href="https://github.com/Livlrt" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/livia-l%C3%B6rtscher/"><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
+        <div class="email">
+          <h3>Wanna talk?</h3>
+          <a href="mailto:livialortscher@gmail.com">
+            Write me :)
+          </a>
+        </div>
+        <div class="social">
+          <h3>Or find me on:</h3>
+            <a href="https://twitter.com/LortscherL" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://github.com/Livlrt" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/livia-l%C3%B6rtscher/"><i class="fab fa-linkedin-in"></i></a>
+<!--           <ul class="contactlist">
+            <li><a href="https://twitter.com/LortscherL" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://github.com/Livlrt" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/livia-l%C3%B6rtscher/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul> -->
+        </div>
       </footer>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="scroll-down.js"></script>
 
   </body>
 </html>
