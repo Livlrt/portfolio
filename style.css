@@ -1,6 +1,6 @@
 body {
-  font-family: 'Nanum Myeongjo', serif;
-  background-color: #21269e;
+  font-family: 'Livvic', sans-serif;
+  background-color: #F19C79;
   /*sand: #d6cdc3;*/
   /*background: url('/images/duna.svg');*/
   color: white;
@@ -12,7 +12,7 @@ section {
 
 .home {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 230px auto 0 auto;
   height: 500px;
 }
@@ -24,7 +24,90 @@ section {
 
 .bref {
   text-align: start;
-  max-width: 650px;
+  max-width: 700px;
+}
+
+.bref h1 {
+  font-size: 60px;
+}
+
+.bref p {
+  font-size: 18px;
+  max-width: 520px;
+}
+
+/*________________________________________________*/
+#name {
+  /*font-size: 55px;*/
+  font-size: 6em;
+  line-height: 1em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#name:hover {
+  cursor: default;
+}
+
+
+.wrapper {
+  display: inline-block;
+  top: -900px;
+  position: relative;
+  height: 150px; /* default */
+  width: 90px; /* default */
+  transition: ease 0.3s all;
+}
+
+
+.wrapper span {
+  position: absolute;
+  top:0;
+  right:0;
+  transition: ease 0.3s all;
+}
+
+.wrapper span letter-2 {
+  color: $first_color;
+}
+
+.wrapper span letter-1 {
+  color: $second_color;
+  z-index: 1;
+}
+
+.wrapper span letter-1:hover {
+  top: -3px;
+  right: -3px;
+}
+
+.wrapper span letter-1:letter-2 {
+  top: 3px;
+  right: 3px;
+}
+
+
+      &.space {
+        padding: 0;
+        min-width: 30px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/*________________________________________________*/
+
+#teste {
+  color: red;
+}
+
+#digpart:hover {
+  font-size: 50px;
+  transition: 0.3s;
+  color: #6EA4BF;
 }
 
 .bref p {
@@ -60,17 +143,20 @@ figure {
   padding-top: 60px;
 }
 #section10 a span {
+  background-color: #f32121;
   position: absolute;
-  top: 0;
+  top: 41px;
   left: 50%;
-  width: 30px;
+  width: 17px;
   height: 50px;
   margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
+  /* border: 2px solid #fff; */
+  border-radius: 7px;
   box-sizing: border-box;
 }
-#section10 a span::before {
+
+/**Small circle that goes down:/
+/*#section10 a span::before {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -80,8 +166,7 @@ figure {
   margin-left: -3px;
   background-color: #fff;
   border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
+  animation: sdb10 3.5s infinite;
   box-sizing: border-box;
 }
 @-webkit-keyframes sdb10 {
@@ -115,14 +200,14 @@ figure {
   100% {
     opacity: 0;
   }
-}
+}*/
 
 /*________________________________________________*/
 
 .about {
   padding-top: 40px;
   max-width: 850px;
-  margin: 50px auto;
+  margin: 50px auto 14% auto;
 }
 
 .myprojects {
@@ -131,7 +216,8 @@ figure {
 }
 
 .about h1 {
-  font-size: 70px;
+  /*font-size: 70px;*/
+  color: #DD614A;
   font-weight: 400;
   text-align: center;
   margin: 70px;
@@ -143,9 +229,14 @@ figure {
   margin-bottom: 40px;
 }
 
+#goal {
+  color: #C32F27;
+  /*color: #A20021;*/
+}
+
 .serviceslist {
-  font-family: 'Overpass', sans-serif;
-  font-size: 18px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -157,6 +248,7 @@ figure {
 .myprojects {}
 
 .myprojects h1 {
+  color: #DD614A;
   font-size: 50px;
   text-align: center;
   margin: 70px;
@@ -192,36 +284,56 @@ figure {
 }
 
 footer {
-  max-width: 850px;
-  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #232323;
+  color: #F19C79;
+  /*max-width: 850px;*/
+  /*margin: 50px auto;*/
 }
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: #92b3b5;
+}
+
+.lets {
+  max-width: 60px;
+}
+
+.email {
+  padding-top: 30px;
+  color: #92b3b5;
 }
 
 .email a {
+  font-family: 'Livvic', sans-serif;
   font-size: 20px;
-  color: #f7651c;
+  color: #92b3b5;
 }
 
 .email a:hover {
-  color: white;
+  color: #f32121;
 }
 
-.social h3 {
-  margin-top: 20px;
+.social {
+  padding-top: 30px;
+  color: #92b3b5;
+}
+
+.social-link {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 i {
-  padding: 20px;
-  color: white;
+  /*padding: 20px;*/
+  color: #92b3b5;
   font-size: 20px;
 }
 
 i:hover {
-  color: #f7651c;
+  color: #f32121;
 }
 
 @media (max-width: 960px) {
