@@ -1,29 +1,31 @@
 body {
   font-family: 'Livvic', sans-serif;
-  background-color: #F19C79;
   /*sand: #d6cdc3;*/
-  /*background: url('/images/duna.svg');*/
   color: white;
-}
-
-section {
-  margin: 20px;
+  background-color: #F19C79;
 }
 
 .home {
+  height: 100%;
+  width: 100%;
+  background-color: #F19C79;
   display: flex;
-  justify-content: space-around;
-  margin: 230px auto 0 auto;
-  height: 500px;
+/*  justify-content: space-around;
+  padding: 230px 0 170px 0;*/
 }
 
-.logo p{
+.logo img {
+  height: 100vh;
+}
+
+.logo h1{
   padding: 0;
   margin: 0;
+  color: #F19C79;
 }
 
 .bref {
-  text-align: start;
+  padding: 230px 0 170px 0;
   max-width: 700px;
 }
 
@@ -32,13 +34,34 @@ section {
 }
 
 .bref p {
+/*  text-align: center;
+  display: flex;
+  flex-wrap: wrap;*/
   font-size: 18px;
   max-width: 520px;
 }
 
+/*.tools {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 3px;
+}*/
+
+#digpart:hover {
+  font-size: 70px;
+  transition: 0.7s;
+  color: #6EA4BF;
+}
+
+.bref p {
+  margin-top: 50px;
+  margin-bottom: 1rem;
+}
+
 /*________________________________________________*/
-#name {
-  /*font-size: 55px;*/
+/*#name {
+  font-size: 55px;
   font-size: 6em;
   line-height: 1em;
   text-align: center;
@@ -56,8 +79,8 @@ section {
   display: inline-block;
   top: -900px;
   position: relative;
-  height: 150px; /* default */
-  width: 90px; /* default */
+  height: 150px; - default
+  width: 90px; - default
   transition: ease 0.3s all;
 }
 
@@ -96,31 +119,17 @@ section {
       }
     }
   }
-}
+}*/
 
 /*________________________________________________*/
 
-#teste {
-  color: red;
-}
-
-#digpart:hover {
-  font-size: 50px;
-  transition: 0.3s;
-  color: #6EA4BF;
-}
-
-.bref p {
-  margin-top: 50px;
-  margin-bottom: 1rem;
-}
 
 /*SCROLL DOWN BUTTON*/
 .ct-btn-scroll {
   width: 49px;
   height: 49px;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
@@ -148,7 +157,7 @@ figure {
   top: 41px;
   left: 50%;
   width: 17px;
-  height: 50px;
+  height: 70px;
   margin-left: -15px;
   /* border: 2px solid #fff; */
   border-radius: 7px;
@@ -205,28 +214,26 @@ figure {
 /*________________________________________________*/
 
 .about {
-  padding-top: 40px;
-  max-width: 850px;
-  margin: 50px auto 14% auto;
-}
-
-.myprojects {
-  max-width: 850px;
-  margin: 50px auto;
+  height: 100%;
+  width: 100%;
+  background-color: #F19C79;;
+  padding-top: 50px;
 }
 
 .about h1 {
   /*font-size: 70px;*/
+  max-width: 850px;
   color: #DD614A;
   font-weight: 400;
-  text-align: center;
-  margin: 70px;
+  text-align: end;
+  margin: 70px auto;
 }
 
 .about h3 {
+  max-width: 850px;
+  color: #ffffffd4;
   text-align: end;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin: 30px auto 40px auto;
 }
 
 #goal {
@@ -235,17 +242,19 @@ figure {
 }
 
 .serviceslist {
+  max-width: 850px;
+  color: #ffffffd4;
   font-family: 'Livvic', sans-serif;
   font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 
-/*ul #ab {
-  text-align: end;
-}*/
-
-.myprojects {}
+.myprojects {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 50px auto;
+}
 
 .myprojects h1 {
   color: #DD614A;
@@ -260,6 +269,10 @@ figure {
 
 .myprojects p {
   max-width: 720px;
+  text-align: initial;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #CG {}
@@ -284,41 +297,42 @@ figure {
 }
 
 footer {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #232323;
-  color: #F19C79;
-  /*max-width: 850px;*/
-  /*margin: 50px auto;*/
-}
-
-footer a {
-  text-decoration: none;
-  color: #92b3b5;
+  font-family: 'Livvic', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffe9e2;
+  color: #f32121;
+  font-size: 20px;
 }
 
 .lets {
-  max-width: 60px;
+  padding: 10px;
 }
 
-.email {
-  padding-top: 30px;
-  color: #92b3b5;
+.footer-info {
+  margin: 5px auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  color: #C32F27;
 }
 
 .email a {
   font-family: 'Livvic', sans-serif;
-  font-size: 20px;
-  color: #92b3b5;
+  color: #C32F27;
+  text-decoration: underline;
 }
 
 .email a:hover {
-  color: #f32121;
+  color: #e20367;
+}
+
+.email p, .social p {
+  margin-bottom: 0rem;
 }
 
 .social {
-  padding-top: 30px;
-  color: #92b3b5;
+  margin: auto 0;
 }
 
 .social-link {
@@ -327,13 +341,12 @@ footer a {
 }
 
 i {
-  /*padding: 20px;*/
-  color: #92b3b5;
   font-size: 20px;
+  color: #C32F27;
 }
 
 i:hover {
-  color: #f32121;
+  color: #e20367;
 }
 
 @media (max-width: 960px) {
