@@ -217,7 +217,7 @@ figure {
 footer {
   width: 100%;
   font-family: 'Livvic', sans-serif;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   text-align: center;
   background-color: #ffe9e2;
   color: #f32121;
